@@ -7,8 +7,8 @@ class Add_Sub(BaseScript):
         self.a = 100
         self.b = 20
 
-    def define_args(self, parser):
-        parser.add_argument('c', type=int, help='Number')
+    # def define_args(self, parser):
+    #     parser.add_argument('c', type=int, help='Number')
        
     def define_args(self, pars):
         pars.add_argument('d', type=int, help='Number')
@@ -20,7 +20,7 @@ class Add_Sub(BaseScript):
 
         # print(self.a - self.b * self.args.c)
         # print(self.a - self.b - self.args.c)
-        print(self.a - self.b  + self.args.d + self.args.c)
+        # print(self.a - self.b  + self.args.d + self.args.c)
         print(self.a - self.b  + self.args.d)
       
 
